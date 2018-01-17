@@ -10,7 +10,7 @@ console.log(isProd ? 'Building for production' : 'Building for development');
 const envVars = ['NODE_ENV'];
 
 const config = {
-  entry: './src/index.js',
+  entry: ['babel-polyfill', './src/index.js'],
   output: {
     path: path.join(__dirname, '/build'),
     filename: 'app.js',
