@@ -2,7 +2,6 @@ import 'tachyons/css/tachyons.css';
 import 'normalize-css';
 import './scss/main.scss';
 
-// import { deRust } from './utils.js';
 import { copyCStr } from './utils.js';
 import libWasm from './lib.rs';
 

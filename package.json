@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline --progress",
-    "build": "cross-env NODE_ENV=production webpack -p --progress",
+    "build": "cross-env NODE_ENV=production webpack --progress",
     "test": "echo \"Not implemented\""
   },
   "dependencies": {
@@ -37,6 +37,7 @@
     "rust-native-wasm-loader": "^0.2.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
+    "uglifyjs-webpack-plugin": "^1.1.6",
     "url-loader": "^0.6.2",
     "wasm-loader": "^1.1.0",
     "webpack": "^3.10.0",

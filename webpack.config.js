@@ -1,6 +1,7 @@
 const WebpackNotifierPlugin = require('webpack-notifier');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
 
@@ -115,11 +116,7 @@ if (isProd) {
         NODE_ENV: JSON.stringify('production')
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      compressor: {
-        warnings: false
-      }
-    }),
+    new UglifyJsPlugin(),
     new webpack.LoaderOptionsPlugin({
       minimize: true
     })
