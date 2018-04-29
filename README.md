@@ -15,6 +15,12 @@ rustup target add wasm32-unknown-unknown --toolchain nightly
 cargo install --force --git https://github.com/alexcrichton/wasm-gc
 ```
 
+Install NPM dependencies
+
+```
+yarn install
+```
+
 Start the development server
 
 ```
